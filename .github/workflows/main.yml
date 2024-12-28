@@ -13,6 +13,7 @@ jobs:
       - run: echo Build
       
   deploy:
+      environment: production
       needs: build
       runs-on: ubuntu-latest
       defaults:
